@@ -1,6 +1,6 @@
 return {
   "nvim-treesitter/nvim-treesitter",
   opts = {
-    indent = { enable = true, disable = {"c", "c++"}}
+    indent = { enable = false, disable = {"c", "c++"}}
   }
 }
