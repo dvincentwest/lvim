@@ -15,9 +15,7 @@ local function trim_whitespace_and_trailing_newlines()
   vim.cmd([[%s/\s\+$//e]])
   -- Remove all trailing newlines
   vim.cmd([[%s/\n\+\%$//e]])
-  -- Add exactly one newline at the end
-  vim.cmd([[%s/\%$/\r/e]])
-  vim.fn.setpos(".", save_cursor)
+  -- VIM will automatically add a trailing newline when saving the file
 end
 
 
